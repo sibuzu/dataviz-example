@@ -15,9 +15,20 @@ var displayJSON = function (query) {
 }
 
 var query = '/winners?where=' + JSON.stringify({
-  "year": {"$gt": 2000},
-  "gender": "female"
+  'year': {'$gt': 2002},
+  'gender': 'male'
 })
 
-console.log('Here we are!')
+query = '/winners?projection=' + JSON.stringify({
+  'mini_bio': 0
+})
+ 
+query = '/winners?where=' + JSON.stringify({
+  'name': "Albert Einstein"
+})
+
+var albertId = '59aaa3dcb6435f0596864350'
+query = '/winners/' + albertId
+
+console.log('query: ' + query)
 displayJSON(query)
