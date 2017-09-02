@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<body>
+    <svg id="chart" width="300" height="225">
+        <circle r="15" cx="100" cy="55"/>
+        <line x1="20" y1="20" x2="20" y2="200"/>
+        <line x1="20" y1="200" x2="280" y2="200"/>
+        <rect x="240" y="5" width="55" height="30"/>
+        <polygon points="210,100,230,100,220,80"/>
+        <text id="title" text-anchor="middle" x="150" y="20">A Dummy Chart</text>
+        <text x="20" y="100" transform="rotate(-90,20,100)" text-anchor="middle" dy="0.71em">
+            y axis label</text>
+        <path d="M20 130 L60 60 L110 100 L160 45"/>
+        <path d="M40 140 
+            A30 40  0 0 1  80 180 
+            A50 50  0 1 1  160 180
+            A30 30  0 0 1  190 180"
+    </svg>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
