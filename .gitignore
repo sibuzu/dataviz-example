@@ -1,3 +1,6 @@
 .ipynb_checkpoints
+.scrapy
 cache.sqlite
 mpl_*.png
+*.log
+scrapy/nobel_winners/images
